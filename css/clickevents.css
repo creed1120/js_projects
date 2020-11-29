@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+html a,
+body a {
+  text-decoration: none;
+  color: #242424;
+}
+
+html a:focus, html a:active, html a:link, html a:hover,
+body a:focus,
+body a:active,
+body a:link,
+body a:hover {
+  color: red;
+}
+
+html button,
+body button {
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+nav {
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0px 0px 20px -4px #272727;
+          box-shadow: 0px 0px 20px -4px #272727;
+  z-index: 10;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 135px;
+  white-space: nowrap;
+}
+
+nav #box-track {
+  position: relative;
+  background-color: yellow;
+  display: inline-block;
+  height: 14px;
+  width: 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 8px 1px #000000;
+          box-shadow: inset 0px 0px 8px 1px #000000;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+nav #box {
+  position: absolute;
+  background-color: #1d1d1d;
+  height: 18px;
+  width: 18px;
+  border-radius: 50px;
+  color: white;
+  top: -2px;
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+nav #toggle-content {
+  width: inherit;
+  text-align: center;
+}
+
+main .slider-wrapper {
+  padding: 100px 20px 20px;
+}
+
+main .slider-wrapper h1 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 60px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .slider-wrapper h1::before {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 6px;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  background-color: #25a14b;
+}
+
+main .slider-wrapper .slider-container {
+  position: relative;
+  max-width: 100%;
+  width: 600px;
+  overflow: visible;
+  margin: auto;
+}
+
+main .slider-wrapper .slider-container .slide {
+  width: 100%;
+}
+
+main .slider-wrapper .slider-container .slide .card {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid #585858;
+  -webkit-box-shadow: 0px 0px 30px -8px #1b1b1b;
+          box-shadow: 0px 0px 30px -8px #1b1b1b;
+}
+
+main .slider-wrapper .slider-container .slide .card #author {
+  margin: 10px 0 5px;
+}
+
+main .slider-wrapper .slider-container .slide .card #job {
+  color: #25a14b;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+main .slider-wrapper .slider-container .slide .card .img-container {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(yellow), to(purple));
+  background-image: linear-gradient(to top right, yellow, purple);
+}
+
+main .slider-wrapper .slider-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 1rem;
+  -webkit-filter: drop-shadow(4px 4px 8px #000000);
+          filter: drop-shadow(4px 4px 8px #000000);
+}
+
+main .slider-wrapper .navigation {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 200px;
+  margin: 20px auto 0;
+}
+
+main .slider-wrapper .navigation .darkmode-atags {
+  background-color: #f1f1f1;
+  color: #181818;
+}
+
+main .slider-wrapper .navigation .darkmode-atags:focus, main .slider-wrapper .navigation .darkmode-atags:active, main .slider-wrapper .navigation .darkmode-atags:link, main .slider-wrapper .navigation .darkmode-atags:hover {
+  background-color: #25a14b;
+  color: #e7e7e7;
+}
+
+main .slider-wrapper .navigation button {
+  display: inline-block;
+  background-color: #ebebeb;
+  height: 30px;
+  line-height: 25px;
+  width: 100%;
+  border: 2px solid #444444;
+  font-size: 14px;
+  color: #25a14b;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .slider-wrapper .navigation button:focus, main .slider-wrapper .navigation button:active, main .slider-wrapper .navigation button:link, main .slider-wrapper .navigation button:hover {
+  background-color: #25a14b;
+  color: #e7e7e7;
+}
+
+main .slider-wrapper .navigation button svg {
+  width: 100%;
+}
+
+main .slider-wrapper .navigation .random-btn-container {
+  position: relative;
+}
+
+main .slider-wrapper .navigation .random-btn-container button#random-btn {
+  border-radius: 10px;
+  width: 120px;
+}
+
+main .slider-wrapper .navigation button#next-btn,
+main .slider-wrapper .navigation button#prev-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 50px;
+  width: 50px;
+}
+
+main .slider-wrapper .navigation #prev-btn svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+main .slider-wrapper .navigation button .next-btn-svg-path,
+main .slider-wrapper .navigation button .prev-btn-svg-path {
+  fill: whitesmoke;
+  stroke: #272727;
+}
+/*# sourceMappingURL=clickevents.css.map */

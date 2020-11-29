@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Events</title>
+    <link rel="stylesheet" href="./css/clickevents.css" />
+  </head>
+  <body>
+    <nav>
+      <p>Click Events</p>
+      <div class="wrapper">
+        Dark Mode
+        <div id="box-track" class="element-container">
+          <span id="box" class="box"></span>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <div class="slider-wrapper">
+        <h1>The Reviews</h1>
+        <div class="slider-container">
+          <div class="slide">
+            <div id="card" class="card">
+              <div class="img-container">
+                <img id="card-image" src="" alt="..." />
+              </div>
+              <h2 id="author"></h2>
+              <h4 id="job"></h4>
+              <p id="bio"></p>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <button href="#." id="prev-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              aria-labelledby="title"
+              aria-describedby="desc"
+              role="img"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>Navigation Right</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path
+                class="prev-btn-svg-path"
+                data-name="layer1"
+                d="M22 21a2.99 2.99 0 0 0 .879 2.121l8.636 8.89-8.636 8.868a3 3 0 0 0 4.242 4.242L40 32.011 27.121 18.879A3 3 0 0 0 22 21z"
+                fill="none"
+                stroke="#202020"
+                stroke-miterlimit="10"
+                stroke-width="2"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+          <button href="#." id="next-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              aria-labelledby="title"
+              aria-describedby="desc"
+              role="img"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>Navigation Right</title>
+              <desc>A line styled icon from Orion Icon Library.</desc>
+              <path
+                class="next-btn-svg-path"
+                data-name="layer1"
+                d="M22 21a2.99 2.99 0 0 0 .879 2.121l8.636 8.89-8.636 8.868a3 3 0 0 0 4.242 4.242L40 32.011 27.121 18.879A3 3 0 0 0 22 21z"
+                fill="none"
+                stroke="#202020"
+                stroke-miterlimit="10"
+                stroke-width="2"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
+          <div class="random-btn-container">
+            <button href="#." id="random-btn">Surprise Me</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="toggle-content"></div>
+
+    <script src="./js/clickevents.js"></script>
+  </body>
+</html>
